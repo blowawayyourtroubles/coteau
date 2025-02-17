@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+  --main-color: #374b4a;
+  --secondary-color: #f8f0e7;
+  --detail: #c4a07c;
+  --detail-2: #526760;
+  --detail-3: #676b61;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arsenal SC, Host Grotesk, sans-serif;
+}
+
+body {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+}
+
+/* header {`
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+} */
+.header-container {
+  font-family: "Host Grotesk";
+  padding: 20px 10px;
+  overflow: hidden;
+  text-align: center;
+  color: var(--detail);
+  background-color: var(--secondary-color);
+  font-size: 25px;
+}
+
+.logo-main a {
+  color: var(--main-color);
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+nav ul {
+  margin: 0;
+  padding: 10px 20px;
+  list-style: none;
+}
+
+nav li {
+  padding: 20px;
+  display: inline;
+}
+
+nav a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--detail);
+  transition: 0.5s;
+}
+
+.main-container {
+  padding: 20px;
+}
+
+.fa-solid {
+  color: var(--main-color);
+  padding: 10px;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.fa-solid:hover {
+  color: var(--detail);
+  transition: 0.5s;
+}
+
+.fa-x {
+  display: none;
+}
+
+.firs-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin: 20px;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.welcome-text {
+  font-size: 40px;
+  padding: 20px;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.welcome-img {
+  width: 100vh;
+  height: auto;
+}
+.main-text {
+  font-size: 20px;
+  padding: 20px;
+  color: var(--detail);
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-img {
+  width: 100%;
+  height: auto;
+}
+.teaser {
+  text-align: justify;
+  font-size: 40px;
+  margin: 20px;
+  padding: 15px;
+  align-self: center;
+}
+
+.card-1,
+.card-2 {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.center-paragraph {
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 18px;
+}
+.other-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.second-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin: 20px;
+  align-items: center;
+  border: var(--secondary-color);
+}
+
+.primary-img,
+.secondary-img {
+  width: 75vh;
+  height: auto;
+  margin: 10px;
+  grid-column: span 3 / auto;
+  border-radius: 5px;
+}
+
+.third-container {
+  padding: 20px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+
+.third-container p {
+  font-size: 20px;
+  padding: 20px;
+  color: var(--detail);
+  text-align: justify;
+}
+
+.third-container img {
+  width: 100%;
+  height: auto;
+}
+
+.fourth-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin: 50px;
+}
+
+.black-tea,
+.green-tea,
+.oolong-tea,
+.white-tea {
+  background-color: var(--secondary-color);
+  color: var(--secondary-color);
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.black-tea,
+.green-tea,
+.oolong-tea,
+.white-tea,
+h3,
+p {
+  color: var(--main-color);
+  text-align: center;
+}
+
+.fifth-container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  color: var(--secondary-color);
+  font-size: 44px;
+  place-items: center;
+  place-content: center;
+
+  background: linear-gradient(
+      135deg,
+      hsla(177, 15%, 25%, 0.65),
+      hsla(32, 55%, 94%, 0.65)
+    ),
+    url(/assets/cocteaus-flower.PNG) no-repeat center center/cover;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.center-container {
+  text-align: center;
+}
+
+/* footer */
+
+.footer-container {
+  padding: 20px;
+  text-align: center;
+  color: var(--detail);
+  background-color: var(--secondary-color);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-footer {
+  color: var(--detail);
+  font-size: 40px;
+  padding: 20px;
+  display: flex;
+}
+
+.logo-footer a {
+  color: var(--detail);
+  text-decoration: none;
+}
+
+.logo-footer a:hover {
+  color: var(--main-color);
+  transition: 0.5s;
+}
+.footer-links {
+  list-style: none;
+  display: flex;
+  padding: 20px 30px;
+  justify-content: center;
+}
+
+.footer-links li {
+  padding: 10px;
+}
+
+.footer-links-container a {
+  color: var(--detail-2);
+  text-decoration: none;
+}
+
+.footer-links-container a:hover {
+  color: var(--detail);
+  transition: 0.5s;
+  text-decoration: underline;
+}
+
+.subscribe-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+  padding: 20px;
+  align-self: center;
+  text-align: justify;
+}
+
+.subscribe-container h3 {
+  color: var(--main-color);
+  margin: 0;
+}
+
+.subscribe-container p {
+  font-size: 20px;
+  padding: 20px;
+  color: var(--detail);
+  text-align: justify;
+}
+
+input {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  color: var(--detail-2);
+  border: 1px solid var(--detail);
+  align-items: center;
+  width: 400px;
+}
+input::placeholder {
+  color: var(--detail);
+}
+
+.subscribe-btn {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: var(--detail-2);
+  color: var(--secondary-color);
+  border: none;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.subscribe-btn:hover {
+  background-color: var(--detail);
+  transition: 0.9s;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.fa-x-twitter,
+.fa-instagram {
+  color: var(--main-color);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.fa-x-twitter:hover,
+.fa-instagram:hover {
+  color: var(--detail);
+  transition: 0.5s;
+}
+
+.copy-right {
+  color: var(--detail-2);
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    font-size: 20px;
+  }
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--main-color);
+  }
+
+  .logo-main {
+    margin-bottom: 10px;
+  }
+
+  #navbar {
+    width: 100%;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+  .welcome-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-text {
+    text-align: center;
+  }
+  .other-container {
+    grid-template-columns: 1fr;
+  }
+
+  .second-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 60px;
+    padding: 20px;
+    margin: 20px;
+  }
+  .third-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 10px;
+    margin: 20px;
+  }
+
+  .third-container h2 {
+    text-align: center;
+    color: var(--secondary-color);
+  }
+
+  .fourth-container {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 20;
+  }
+
+  .black-tea,
+  .green-tea,
+  .oolong-tea,
+  .white-tea {
+    background-color: var(--secondary-color);
+    color: var(--secondary-color);
+    width: 250px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+
+  .primary-img,
+  .secondary-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input {
+    width: 100%;
+  }
+  .subscribe-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    text-align: justify;
+  }
+
+  .subscribe-container h3 {
+    text-align: center;
+    color: var(--main-color);
+  }
+  .subscribe-container p {
+    font-size: 18px;
+    padding: 20px;
+    color: var(--detail);
+    text-align: justify;
+  }
+
+  .subscribe-container input {
+    width: 100%;
+  }
+}

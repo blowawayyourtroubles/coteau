@@ -1,0 +1,102 @@
+.menu-tea {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  padding: 40px;
+  margin: 20px;
+}
+.menu-tea h1 {
+  font-size: 40px;
+}
+.menu-tea h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: underline;
+}
+.menu-tea p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.menu-container {
+  color: var(--main-color);
+  background-color: var(--secondary-color);
+  padding: 25px;
+  border-radius: 10px;
+  width: 100%;
+}
+.menu-container h3 {
+  font-size: 25px;
+}
+
+.menu-container p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+.menu-tea img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.favorites-tea {
+  margin: 40px;
+  padding: 20px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  border: none;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 20px 18px;
+  color: var(--secondary-color);
+  padding: 20px 18px;
+  background-color: var(--secondary-color);
+  margin: 0;
+}
+
+.dropdown:hover .dropbtn,
+.dropbtn:focus {
+  background-color: var(--detail);
+  color: var(--secondary-color);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--secondary-color);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-style: italic;
+}
+
+.dropdown-content a {
+  float: none;
+  color: var(--main-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: var(detail-3);
+}
+
+.show {
+  display: block;
+}
