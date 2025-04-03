@@ -1,67 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap");
-
-:root {
-  --main-color: #374b4a;
-  --secondary-color: #f8f0e7;
-  --detail: #c4a07c;
-  --detail-2: #526760;
-  --detail-3: #676b61;
-}
-
-* {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: Arsenal SC, Host Grotesk, sans-serif;
-}
-
-body {
-  background-color: var(--main-color);
-  color: var(--secondary-color);
-}
-
-/* header {`
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-} */
-.header-container {
-  font-family: "Host Grotesk";
-  padding: 20px 10px;
-  overflow: hidden;
-  text-align: center;
-  color: var(--detail);
-  background-color: var(--secondary-color);
-  font-size: 25px;
-}
-
-.logo-main a {
-  color: var(--main-color);
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-nav ul {
-  margin: 0;
-  padding: 10px 20px;
-  list-style: none;
-}
-
-nav li {
-  padding: 20px;
-  display: inline;
-}
-
-nav a {
-  color: var(--main-color);
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: var(--detail);
-  transition: 0.5s;
-}
-
 .main-container {
   padding: 20px;
 }
@@ -190,7 +126,7 @@ nav a:hover {
 
 .fourth-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   padding: 20px;
   margin: 50px;

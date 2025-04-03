@@ -1,174 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Cocteau's Tea</title>
-    <link rel="stylesheet" href="/css/estilo.css">
-    <link rel="shortcut icon" href="/assets/ico.jpeg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>About - Cocteau's Tea</title>
+    <link rel="stylesheet" href="/css/estilo.css" />
+    <link rel="shortcut icon" href="/assets/ico.jpeg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-</head>
+    <style>
+      .main-section {
+        display: grid;
+        gap: 25px;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+      }
 
-<header>
+      .main-div {
+        padding: 10px;
+        margin: 10px;
+      }
 
+      .main-div h2,
+      p {
+        padding: 20px;
+        margin: 15px;
+      }
+
+      .main-div:first-child {
+        grid-column: 1 / 3;
+        width: 100%;
+        text-align: justify;
+      }
+
+      .main-div img {
+        width: 550px;
+      }
+
+      .main-div:last-child {
+        grid-row-start: 2;
+        width: 100%;
+        grid-column: 1 / 4;
+        text-align: center;
+      }
+
+      .timeline-events {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .event {
+        margin-bottom: 10px;
+        padding-left: 20px;
+        position: relative;
+        justify-content: center;
+        display: flex;
+      }
+
+      .event::before {
+        content: "";
+        position: absolute;
+        left: 30px;
+        top: 5px;
+        width: 450px;
+        height: 10px;
+        background-color: var(--detail);
+      }
+
+      .year {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      .tea-ritual-section {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        height: 100vh;
+        width: 100vw;
+        color: var(--secondary-color);
+        place-items: center;
+        place-content: center;
+        background: linear-gradient(135deg, #364948a6, #f8f0e7a6),
+          url(/assets/cocteau-hill.jpg) no-repeat center center / cover;
+      }
+
+      .tea-ritual-title {
+        color: var(--secondary-color);
+        border-bottom: 2px solid var(--secondary-color);
+        padding: 10px;
+       justify-content: center;
+       text-align: center;
+        font-size: 77px;
+       
+      }
+
+      .tea-ritual-description{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px ;
+  font-size: 22px;
+}
+
+   
+.tea-ritual-text-1{
+      text-align: justify;
+      grid-column: 1 / 3;
+      padding: 30px;
+ 
+      }
+
+  .tea-ritual-text-2{
+  text-align: justify;
+  grid-column: 3 / 5;
+  padding: 30px;
+
+      }
+
+      
+
+
+.our-locations{
+  margin-bottom: 30px;
+}
+
+.locations-title{
+  padding: 20px;
+}
+.locations-container{
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+ background-color: var(--secondary-color);
+ margin-bottom: 30px;
+
+
+}
+.location-item{
+  margin-bottom: 30px;
+}
+.location-name{ font-size: 27px;}
+
+.location-image{
+  align-self: center;
+  align-content: center;
+ justify-items: center;
+ justify-content: center;
+ margin-bottom: 30px;
+  border-radius: 50% ;
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+}
+    </style>
+  </head>
+
+  <header>
     <div class="header-container">
+      <div class="logo-main">
+        <a href="header.html">
+          <span class="logo">Cocteau's Tea</span>
+        </a>
+      </div>
 
-        <div class="logo-main">
-
-            <a href="/index.html">
-
-                <span class="logo">Cocteau's Tea</span>
-
-            </a>
-
-        </div>
-
-        <nav id="navbar">
-
-            <ul class="nav-links">
-
-                <li><a href="index.html" rel="noopener">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="locations.html">Locations</a></li>
-
-            </ul>
-
-
-        </nav>
-
+      <nav id="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="locations.html">Locations</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-</header>
+  <body>
+    <main class="main-container">
+      <section class="main-section">
+        <div class="main-div">
+          <h2>The Origins of Cocteau's Tea</h2>
+          <p>
+            In 1963, a mysterious Frenchman named Lucien Leclair opened
+            Cocteau's Tea in Paris, claiming inspiration from Jean Cocteau
+            himself. Rumors swirled—some said Lucien was an artist's muse,
+            others whispered he was a character brought to life by Cocteau's
+            imagination. The enigmatic tea house quickly gained a reputation for
+            blends so luxurious and complex they seemed almost otherworldly.
+          </p>
 
-<body>
-    <img src="" alt="">
-    <h2>About Cocteau's Tea</h2>
-    <p>The art of blending, The joy of discovery, The appreciation of subtle nuances</p>
-
-    <p>At Cocteau's Tea, we believe in the transformative power of tea. Each cup is a journey, steeped in history,
-        culture, and craftsmanship. Inspired by the boundless creativity of Jean Cocteau and the timeless elegance of
-        Yves Saint Laurent, we've created more than just a store—we've created a haven.</p>
-    <img src="#" alt="">
-    <p>Our carefully curated selection brings together rare blends, sustainable sourcing, and the artistry of
-        tea-making. Every leaf tells a story, every sip evokes a memory. Whether you're discovering a new favorite or
-        returning to a beloved classic, we're here to guide you.</p>
-    <img src="#" alt="">
-    <p>Cocteau's Tea is a celebration of connection. It's where art meets tradition, where elegance meets comfort, and
-        where tea enthusiasts gather to share in the ritual of tea.</p>
-    <img src="#" alt="">
-    <p>Welcome to Cocteau's Tea—a world where every cup is extraordinary.</p>
-
-
-    <div>
-        <h2>Anytime Anywhere</h2>
-        <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <p>Journey Through Flavor and Tradition</p>
-        </div>
-        <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <p>Unlocking the Secrets of Tea</p>
-        </div>
-        <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <p>Exploring the Cultural Significance of Tea</p>
+          <p>
+            Yves Saint Laurent was a frequent visitor, retreating to a
+            velvet-draped room for secretive tastings. Then, on the night of a
+            grand masquerade in 1974, Lucien vanished without a trace. The shop
+            closed abruptly, leaving only unsettling stories—guests spoke of
+            masks that refused to come off and visions of shadowy figures.
+          </p>
         </div>
 
-    </div>
+        <div class="main-div">
+          <img src="/assets/simple-tea.jpeg" alt="" />
+        </div>
 
+        <div class="main-div">
+          <p>
+            Years later, a new proprietor known only as M.C. reopened the shop,
+            preserving its haunting elegance. Those who sip the tea today claim
+            to glimpse forgotten memories or hear faint whispers. Is it a portal
+            to dreams or an elaborate ruse? At Cocteau's Tea, the line between
+            reality and imagination is deliciously blurred.
+          </p>
+        </div>
+      </section>
 
+      <section class="timeline">
+        <h2>Timeline of the Enigma</h2>
+        <div class="timeline-events">
+          <div class="event">
+            <span class="year">1963</span>
+            <p>Shop founded by Lucien Cocteau.</p>
+          </div>
+          <div class="event">
+            <span class="year">1987</span>
+            <p>Lucien's mysterious disappearance.</p>
+          </div>
+          <div class="event">
+            <span class="year">2001</span>
+            <p>M.C. arrives, bringing new blends and secrets.</p>
+          </div>
+        </div>
+      </section>
 
-    <div>
-        <h2>Our Mission</h2>
-        <p>At Cocteau's Tea, we're on a mission to elevate the tea experience. We believe that tea is more than just a
-            beverage—it's a way of life. Our mission is to share the artistry, history, and health benefits of tea with
-            the
-            world. We're committed to sourcing the finest teas, supporting sustainable practices, and creating a
-            welcoming
-            space for tea lovers of all kinds.</p>
-        <img src="" alt="">
-    </div>
+      <section class="tea-ritual-section">
+        <div class="tea-ritual-container">
+          <h2 class="tea-ritual-title">
+            Crafting Timeless Elegance: Tea & Rituals at Cocteau's Tea
+          </h2>
+          <div class="tea-ritual-description">
+            <div class="tea-ritual-text-1">
+              <p>
+                At Cocteau's Tea, we believe that every sip is an invitation to
+                indulge in artful moments—where refinement meets the senses. Our
+                small-batch teas are meticulously blended from the finest,
+                sustainably sourced leaves and botanicals. We partner with
+                regenerative farms, ensuring each cup embodies purity, elegance,
+                and a touch of the extraordinary.
+              </p>
+            </div>
+            <div class="tea-ritual-text-2">
+              <p>
+                Our bespoke steepware, crafted with lead-free and BPA-free
+                materials, transforms each brewing ritual into an immersive
+                experience. Whether you're lost in reverie, hosting an intimate
+                gathering, or simply finding solace in a quiet moment, our tea
+                tumblers, cold brew filters, and steeping mugs blend beauty and
+                function, infusing everyday life with a touch of poetic
+                elegance.
+              </p>
+            </div>
+            <!-- <img src="/assets/cocteau-hill.jpg" alt=""> -->
+          </div>
+        </div>
+      </section>
 
+      <section id="our-locations">
+        <h2 class="locations-title">Our Locations:</h2>
+        <div class="locations-container">
+          <div class="location-item">
+            <!-- <p class="location-name"><strong>Paris</strong><br />40 rue du Faubourg National</p> -->
+            <img class="location-image" src="/assets/Paris.png" alt="">
+          </div>
+          <div class="location-item">
+            <!-- <p class="location-name"><strong>Nancy</strong><br />15 rue de Raymond Poincaré</p> -->
+            <img class="location-image" src="/assets/Nancy.png" alt="">
+          </div>
+          <div class="location-item">
+            <!-- <p class="location-name"><strong>Tours</strong><br />28 avenue Jean Portalis</p>-->
+            <img class="location-image" src="/assets/Tours.png" alt=""> 
+          </div>
+          <div class="location-item">
+            <!-- <p class="location-name"><strong>Saint-Malo</strong><br />74 rue des lieutemants Thomazo</p> -->
+            <img class="location-image" src="/assets/Saint.png" alt="">
+          </div>
+        </div>
+      </section>
+      
+    </main>
 
+    <article></article>
+  </body>
 
-</body>
-
-
-<footer>
-
-
+  <footer>
     <div class="footer-container">
+      <div class="logo-footer">
+        <a href="index.html">
+          <span class="logo">Cocteau's Tea</span>
+        </a>
+      </div>
 
-        <div class="logo-footer">
+      <div class="footer-links-container">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="locations.html">Locations</a></li>
+        </ul>
+      </div>
 
-            <a href="index.html">
+      <div class="subscribe-container">
+        <h3>Subscribe Now and Begin Your Tea Journey</h3>
+        <p>
+          Explore artful tea-infused creations, culinary delights, and timeless
+          health benefits. Learn how your tea choices impact the world. Join our
+          community for exclusive updates, stories, and inspiring challenges.
+        </p>
+      </div>
 
-                <span class="logo">Cocteau's Tea</span>
+      <div class="subscribe-form">
+        <input type="email" id="email" placeholder="Enter your email" />
+        <button class="subscribe-btn">Subscribe</button>
+      </div>
 
-            </a>
+      <div class="social-media">
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
 
-        </div>
-        <div class="footer-links-container">
-
-            <ul class="footer-links">
-
-                <a href="index.html" rel="noopener">
-                    <li>Home</li>
-                </a>
-                <a href="menu.html">
-                    <li>Menu</li>
-                </a>
-                <a href="about.html">
-                    <li>About Us</li>
-                </a>
-                <a href="locations.html">
-                    <li>Locations</li>
-                </a>
-
-            </ul>
-
-        </div>
-
-        <div class="subscribe-container">
-
-            <h3>Subscribe Now and Begin Your Tea Journey</h3>
-
-            <p>Explore artful tea-infused creations, culinary delights, and timeless health benefits. Learn how your tea
-                choices impact the world. Join our community for exclusive updates, stories, and inspiring challenges.
-            </p>
-
-
-
-        </div>
-
-        <div class="subscribe-form">
-
-            <input type="email" name="" id="email" placeholder="Enter your email" />
-
-            <button class="subscribe-btn">Subscribe</button>
-
-        </div>
-        <div class="social-media">
-
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-
-        </div>
-
-        <p class="copy-right">&copy; 2025 Cocteau's Tea. All Rights Reserved</p>
-
-</footer>
-
+      <p class="copy-right">&copy; 2025 Cocteau's Tea. All Rights Reserved</p>
+    </div>
+  </footer>
 </html>

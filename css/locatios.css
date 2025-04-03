@@ -1,0 +1,105 @@
+.pick-up-delivery {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    font-weight: bold;
+    display: flex;
+    margin-bottom: 12px;
+    cursor: pointer;
+    align-items: center;
+
+}
+
+.pick-up-delivery input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.order-type {
+    position: relative;
+}
+
+.cocteau-locations {
+    width: 1200px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+.event-card {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.events {}
+
+.event-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.event-card__date,
+.event-card__hour {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.event-card__tags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.event-card__tags-wrapper {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.event-card__tag {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    padding: 5px 10px;
+    font-size: 14px;
+    transition: 0.5s ease;
+}
+
+.event-card__tag:hover {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+
+.event-card__tickets a {
+
+    color: var(--detail-2);
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.5s ease;
+}
+
+.event-card__tickets a:hover {
+    background-color: var(--detail);
+}
+
+.event-card__title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--detail-2);
+    text-decoration: none;
+    transition: color 0.5s ease;
+    text-align: left;
+}
+
+.event-card__title:hover {
+    color: var(--detail);
+}
