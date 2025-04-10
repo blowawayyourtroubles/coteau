@@ -5,10 +5,10 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cocteau's Tea - Locations</title>
+  <title>Locations | Cocteau's Tea</title>
   <link rel="stylesheet" href="css/estilo.css">
   <link rel="stylesheet" href="css/locatios.css">
-  <link rel="shortcut icon" href="/assets/ico.jpeg" type="image/x-icon">
+  <link rel="shortcut icon" href="/assets/ico.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,28 +16,9 @@
     <script>
       function myAttribute() { }
     </script>
-
-
-<style>
-       .hello{ display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin-bottom: 30px;
-      background: linear-gradient(135deg, #364948a6, #f8f0e7a6),
-        url(/assets/cocteau-hill.jpg) no-repeat center center / cover;
-      height: 100%;
-      width: 100%;
-        width: 100vw;
-        background: linear-gradient(135deg, #364948a6, #f8f0e7a6),
-          url(/assets/cocteau-hill-optimized.jpg) no-repeat center center / cover;
-        background: linear-gradient(135deg, #364948a6, #f8f0e7a6),
-          url(/assets/cocteau-hill.jpg) no-repeat center center / cover;
-      
-       justify-content: center;
-        grid-column-start: 2;
-      }
-</style>
 </head>
-
+<body>
+  
 <header>
 
   <div class="header-container">
@@ -73,188 +54,175 @@
   </div>
 
 </header>
-
-<body>
   <main>
-    <div class="pick-up-delivery">
-  
-      <input type="radio" name="ordertype" id="delivery" checked>
-      <label for="delivery" class="ordertype">Delivery</label>
-  
-      <input type="radio" name="ordertype" id="pickup">
-      <label for="pickup" class="ordertype">Pickup</label><span class="checkmark"></span>
-  
-  
-    </div>
-  
-    <p id="demo">Demo</p>
-    <button style="cursor: pointer; padding: 20px;" type="button" onclick=myAttribu ;>Change me!</button>
-  
-    <section class="cocteau-locations">
-      <div class="cocteu-selector">
-        <form action="/locations.html">
-          <label for="locations">
-            <select name="locations" id="locations">
-              <option value="1"> Cocteau's Faubourg National</option>
-              <option value="2"> Cocteau's Raymond Poincaré</option>
-              <option value="3"> Cocteau's lieutemants Thomazo</option>
-              <option value="4">Cocteau's Goya </option>
-              <option value="5"> Cocteau's Jean Portalis</option>
-            </select>
-          </label>
-  
-  
-        </form>
-      </div>
-      <div class="locations-container">
-  
-        <div class="locations-title">
-          <h3>Cocteau's Faubourg National</h3>
+    <section class="store-section">
+      <div class="container">
+        <div class="store-locator">
+            <h1>Store Locator</h1>
+            <p>Find our locations near you</p>
         </div>
-        <p>40 rue du Faubourg National</p>
-        <p>+33780763733</p>
-        <!-- <span>Open</span> -->
-  
-      </div>
-  
-      <div>
-        <div>
-          <h3>Cocteau's Raymond Poincaré
-          </h3>
+        
+        <div class="order-type-toggle">
+            <div class="order-type active">Delivery</div>
+            <div class="order-type">Pickup</div>
         </div>
-        <p>15 rue de Raymond Poincaré</p>
-        <p>+33745718646</p>
-        <!-- <span>Open</span> -->
-  
-      </div>
-  
-      <div>
-        <h3>Cocteau's lieutemants Thomazo</h3>
-        <p>74 rue des lieutemants Thomazo</p>
-        <p>33745740152</p>
-      </div>
-  
-      <div>
-        <h3>Cocteau's Goya</h3>
-        <p>48 rue Goya</p>
-        <p>33745751531</p>
-      </div>
-  
-      <div>
-        <h3>Cocteau's Jean Portalis</h3>
-        <p>28 avenue Jean Portalis</p>
-        <p>33780763733</p>
-  
-      </div>
-  
-      <div>
-        <h1>Our Locations</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex unde omnis corrupti libero officia amet
-          sunt dolores quae veritatis perspiciatis voluptates magnam, quasi fugiat vel beatae atque.</p>
-      </div>
-  
-      <div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10557.711160613027!2d7.725872465652394!3d48.58250734073355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796c84a8aa9aa3b%3A0x4ae695a6df0c3922!2s40%20Rue%20du%20Faubourg-National%2C%2067000%20Strasbourg%2C%20France!5e0!3m2!1sen!2sdo!4v1742569945014!5m2!1sen!2sdo"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-  
-    </section>
-  
-    <section class="events">
-  
-      <article class="event-card">
-        <div class="event-card__content">
-          <div class="event-card__date">27.03.25 — 12.04.25</div>
-          <div class="event-card__hour"></div>
-          <div class="event-card__tags">
-            <div class="event-card__tags-wrapper">
-              <a class="event-card__tag" href="#">In-Situ Satellite</a>
-              <a class="event-card__tag" href="#">Visual Tea Arts</a>
+        
+        <div class="search-container">
+            <div class="search-form">
+                <input type="text" class="search-input" placeholder="Search for city, street, ZIP code...">
+                <button class="search-button">Search</button>
             </div>
-  
-            <a href="#" class="event-card__title">
-              Tea Exposition: 40 Rue du Faubourg National 2025
-            </a>
-  
-            <div class="event-card__tickets">
-              <a href="#" target="_blank">Get Tickets</a>
+            
+            <div class="filter-section">
+                <select class="location-selector">
+                    <option value="">All Locations</option>
+                    <option value="1"> Cocteau's Faubourg National</option>
+                    <option value="2"> Cocteau's Raymond Poincaré</option>
+                    <option value="3"> Cocteau's lieutemants Thomazo</option>
+                    <option value="4"> Cocteau's Jean Portalis</option>
+                </select>
             </div>
+        </div>
+        
+        <div class="content-layout">
+          <div class="results-container">
+            <div class="lieutemants store-item">
+                <div class="store-name">Cocteau's lieutemants Thomazo</div>
+                <div class="store-address">74 rue des lieutemants Thomazo 
+                    <span class="store-distance">· 1.2 km</span>
+                </div>
+                <div class="store-contact">+33745740152</div>
+                <div class="store-hours">
+                    <div class="status-indicator"></div>
+                    <span>Open from 10:00 to 21:00</span>
+                </div>
+            </div>
+            <div class="portalis store-item">
+                <div class="store-name">Cocteau's Jean Portalis</div>
+                <div class="store-address">28 avenue Jean Portalis 
+                    <span class="store-distance">· 2.4 km</span>
+                </div>
+                <div class="store-contact">+33780763733</div>
+                <div class="store-hours">
+                    <div class="status-indicator"></div>
+                    <span>Open from 10:00 to 21:00</span>
+                </div>
+            </div>
+            <div class="faubourg store-item">
+                <div class="store-name">Cocteau's Faubourg National</div>
+                <div class="store-address">40 rue du Faubourg National 
+                    <span class="store-distance">· 4.8 km</span>
+                </div>
+                <div class="store-contact">+33780763733</div>
+                <div class="store-hours">
+                    <div class="status-indicator"></div>
+                    <span>Open from 10:00 to 21:00</span>
+                </div>
+            </div>
+            <div class="raymond store-item">
+                <div class="store-name">Cocteau's Raymond Poincaré</div>
+                <div class="store-address">15 rue de Raymond Poincaré 
+                    <span class="store-distance">· 7.2 km</span>
+                </div>
+                <div class="store-contact">+33745718646</div>
+                <div class="store-hours">
+                    <div class="status-indicator"></div>
+                    <span>Open from 10:00 to 21:00</span>
+                </div>
+            </div>
+        </div>
+        
+          <div class="map-container" id="map">
+              <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10557.711160613027!2d7.725872465652394!3d48.58250734073355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796c84a8aa9aa3b%3A0x4ae695a6df0c3922!2s40%20Rue%20du%20Faubourg-National%2C%2067000%20Strasbourg%2C%20France!5e0!3m2!1sen!2sdo!4v1742569945014!5m2!1sen!2sdo"
+                  width="100%" 
+                  height="100%" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
           </div>
-  
-        </div>
-      </article>
-  
+      </div>
+      
+
     </section>
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <article class="event-card">
+          <div class="event-date">27.03.25 — 12.04.25</div>
+          <h3 class="event-title">Tea Exposition: 40 Rue du Faubourg National 2025</h3>
+          <div class="event-tags">
+              <span class="event-tag">In-Situ Satellite</span>
+              <span class="event-tag">Visual Tea Arts</span>
+          </div>
+          <a href="#" class="event-tickets">Get Tickets</a>
+      </article>
+  </section>
   </main>
 
+  <footer>
+
+
+    <div class="footer-container">
+  
+      <div class="logo-footer">
+  
+        <a href="index.html">
+  
+          <span class="logo">Cocteau's Tea</span>
+  
+        </a>
+  
+      </div>
+      <div class="footer-links-container">
+  
+        <ul class="footer-links">
+  
+          <a href="index.html" rel="noopener">
+            <li>Home</li>
+          </a>
+          <a href="menu.html">
+            <li>Menu</li>
+          </a>
+          <a href="about.html">
+            <li>About Us</li>
+          </a>
+          <a href="locations.html">
+            <li>Locations</li>
+          </a>
+  
+        </ul>
+  
+      </div>
+  
+      <div class="subscribe-container">
+  
+        <h3>Subscribe Now and Begin Your Tea Journey</h3>
+  
+        <p>Explore artful tea-infused creations, culinary delights, and timeless health benefits. Learn how your tea
+          choices impact the world. Join our community for exclusive updates, stories, and inspiring challenges.</p>
+  
+  
+  
+      </div>
+  
+      <div class="subscribe-form">
+  
+        <input type="email" name="" id="email" placeholder="Enter your email" />
+  
+        <button class="subscribe-btn">Subscribe</button>
+  
+      </div>
+      <div class="social-media">
+  
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+  
+      </div>
+  
+      <p class="copy-right">&copy; 2025 Cocteau's Tea. All Rights Reserved</p>
+  
+  </footer>
 </body>
-
-
-
-<footer>
-
-
-  <div class="footer-container">
-
-    <div class="logo-footer">
-
-      <a href="index.html">
-
-        <span class="logo">Cocteau's Tea</span>
-
-      </a>
-
-    </div>
-    <div class="footer-links-container">
-
-      <ul class="footer-links">
-
-        <a href="index.html" rel="noopener">
-          <li>Home</li>
-        </a>
-        <a href="menu.html">
-          <li>Menu</li>
-        </a>
-        <a href="about.html">
-          <li>About Us</li>
-        </a>
-        <a href="locations.html">
-          <li>Locations</li>
-        </a>
-
-      </ul>
-
-    </div>
-
-    <div class="subscribe-container">
-
-      <h3>Subscribe Now and Begin Your Tea Journey</h3>
-
-      <p>Explore artful tea-infused creations, culinary delights, and timeless health benefits. Learn how your tea
-        choices impact the world. Join our community for exclusive updates, stories, and inspiring challenges.</p>
-
-
-
-    </div>
-
-    <div class="subscribe-form">
-
-      <input type="email" name="" id="email" placeholder="Enter your email" />
-
-      <button class="subscribe-btn">Subscribe</button>
-
-    </div>
-    <div class="social-media">
-
-      <i class="fa-brands fa-x-twitter"></i>
-      <i class="fa-brands fa-instagram"></i>
-
-    </div>
-
-    <p class="copy-right">&copy; 2025 Cocteau's Tea. All Rights Reserved</p>
-
-</footer>
-
 </html>

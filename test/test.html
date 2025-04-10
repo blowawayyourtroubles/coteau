@@ -4,159 +4,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>bataille star</title>
-  <link rel="shortcut icon" href="cocteaus-tea/assets/ico.jpeg" type="image/x-icon" />
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
+  <title>ecos de lineas</title>
+<link rel="stylesheet" href="/test/test.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    html {
-      margin: 0;
-      padding: 0;
-      background-color: #FAF4ED;
-      color: #d66d12;
-      box-sizing: border-box;
-      font-family: 'Maven Pro';
-    }
+</head>
 
-    /* header */
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 60px;
-      padding: 0 20px;
-
-    }
-
-    .logo-main a {
-      text-decoration: none;
-      font-size: 35px;
-      font-weight: bold;
-      line-height: 60px;
-      margin: 0;
-      color: #d66d12;
-    }
-
-    .logo-main a:hover {
-      color: #125ad6;
-      transition: 0.5s;
-    }
-
-    nav {
-      display: flex;
-      align-items: center;
-      height: 60px;
-    }
-
-    nav ul {
-      display: flex;
-      padding: 0;
-    }
-
-    nav ul li {
-      list-style: none;
-      margin: 0 15px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    nav ul li a:hover {
-      color: #125ad6;
-      text-decoration: underline;
-      transition: 0.5s;
-    }
-
-    /* main content */
-
-    .tea-ritual-section {
-        height: 100vh;
-        width: 100vw;
-        place-content: center;
-        background: linear-gradient(135deg,  hsla(177, 15%, 25%, 0.65),
-        hsla(32, 55%, 94%, 0.65)),
-          url(/assets/cocteau-hill.jpg) no-repeat center center / cover;
-      }
-      .tea-ritual-title {
-        color: var(--secondary-color);
-        border-bottom: 2px solid var(--detail);
-        text-align: center;
-        padding-bottom: 50px;
-        font-size: 47px;
+<body>
   
-      }
-.tea-ritual-description{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 50px ;
-  font-size: 22px;
-}
-      .tea-ritual-text-1{
-      text-align: justify;
-      grid-column: 1 / 3;
-      padding: 30px;
- 
-      }
-
-  .tea-ritual-text-2{
-  text-align: justify;
-  grid-column: 3 / 5;
-  padding: 30px;
-
-      }
-
-  </style>
-  </head>
   <header>
     <div class="logo-main">
-      <a href="#">bataille star</a>
+      <a href="/test/test.html">ecos de lineas</a>
     </div>
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Locations</a></li>
+      <i class="fa-solid fa-bars" id="barras"></i>
+      <ul class="nav-menu">
+        <li><a href="#">Inico</a></li>
+        <li><a href="#">Libros</a></li>
+        <li><a href="#">Acerca de</a></li>
+     <i class="fa-solid fa-moon" id="toggleDark"></i>
+   
       </ul>
+
     </nav>
 </header>
 
-<body>
+<div class="page-container">
   <main class="content-grid">
-    <section class="tea-ritual-section">
-      <div class="tea-ritual-container">
-        <div class="tea-ritual-title"><h2>
-          Crafting Timeless Elegance: Tea & Rituals at Cocteau's Tea
-        </h2></div>
-        
-        <div class="tea-ritual-description">
-          <div class="tea-ritual-text-1">
-            <p>
-              At Cocteau's Tea, we believe that every sip is an invitation to
-              indulge in artful moments—where refinement meets the senses. Our
-              small-batch teas are meticulously blended from the finest,
-              sustainably sourced leaves and botanicals. We partner with
-              regenerative farms, ensuring each cup embodies purity, elegance,
-              and a touch of the extraordinary.
-            </p>
-          </div>
-          <div class="tea-ritual-text-2">
-            <p>
-              Our bespoke steepware, crafted with lead-free and BPA-free
-              materials, transforms each brewing ritual into an immersive
-              experience. Whether you're lost in reverie, hosting an intimate
-              gathering, or simply finding solace in a quiet moment, our tea
-              tumblers, cold brew filters, and steeping mugs blend beauty and
-              function, infusing everyday life with a touch of poetic
-              elegance.
-            </p>
-          </div>
-          </div>
-      </div>
-</section>
+    <section class="section-container">
+      <h1 class="titulo">ecos de lineas - frases de mis autores favoritos</h1>
+      <div class="frase">
+      <p class="parrafo">“For in his presence I grow silent, 
+        because the smallest words — yes, now, well, and, 
+        but, then, oh! — are so loaded, coming from me to 
+        him they have a hundred times their meaning”
+        </p> 
+      <a href=""><span>- Ingeborg Bachmann</span></a>
+    </div>
+      <button class="boton-siguiente"  onclick="">Siguiente Frase</button>
+    </section>
+    
         </main>
+        <footer>
+          <div class="footer-container">
+            <div class="footer-links">
+              <a href="#" rel="noopener">Inicio</a> |
+              <a href="#">Libros</a>|
+              <a href="#">Acerca de</a>|
+              <a href="#">Contacto</a>|
+            </div>
+            <p class="copy-right">&copy; 2025 ecos de lineas - Todos los Derechos Reservados</p>
+          </div>
+        </footer>
+      </div>
+      <script src="/test/app.js"></script> 
         </body>
 
 </html>

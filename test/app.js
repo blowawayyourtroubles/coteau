@@ -1,24 +1,28 @@
-function myAttribute() {
-    document.getElementById('demo').innerHTML = "Goodbye World";
+const toggle = document.getElementById("toggleDark");
+const body = document.body;
 
-}
+toggle.addEventListener('click', function () {
+  this.classList.toggle("fa-sun");
+  this.classList.toggle("fa-moon");
 
-let numeros = [1, 2, 3, 4];
-numeros[2] = 25;
+  if (body.classList.toggle("black-theme")) {
+    body.style.transition = "1.4s";
+  } else {
+    body.style.transition = "1.4s";
+  }
+});
 
-// console.log(numeros);
+toggle.addEventListener('click', function () {
+    this.classList.toggle("fa-bars");
 
-let division;
-division = 0 / 0;
-// console.log(division);
+    if (body.classList.toggle("fa-bars")) {
+       
+    }
+});
 
+const barras = document.getElementById('barras');
+const navMenu = document.querySelector('.nav-menu');
 
-const elMar = ["Debado en el mar", "Descansa en el oceano", "Flota en el oceano"];
-console.log(elMar)
-
-let saltoDeLinea = 'Me gusta ver thrilers\nY escuchar rock';
-// console.log(saltoDeLinea);
-
-
-let stringer = "\"Me llamaba German\"";
-// console.log(stringer);
+barras.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+})

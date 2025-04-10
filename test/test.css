@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
+
+:root {
+    --fondo: #F2E8CF;
+    --texto: #210F04;
+    --detalle: #38A3A5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    height: 100%;
+    font-family: 'Maven Pro', serif, Helvetica;
+
+}
+
+body {
+    background-color: var(--fondo);
+    color: var(--texto);
+
+}
+
+.black-theme {
+    --fondo: #210F04;
+    --texto: #F2E8CF;
+    --detalle: #38A3A5;
+}
+
+i {
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 20px;
+}
+
+#barras {
+    display: none;
+}
+
+.logo-main a {
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 60px;
+    margin: 0;
+    color: var(--texto);
+}
+
+.logo-main a:hover {
+    color: var(--detalle);
+    transition: 0.5s;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.nav-menu {
+    display: flex;
+    padding: 0;
+}
+
+.nav-menu li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--texto);
+
+}
+
+nav ul li a:hover {
+    color: var(--detalle);
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+
+
+/* main content */
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-grid {
+    padding: 20px;
+    margin: 40px;
+    flex: 1;
+}
+
+.section-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+}
+
+.titulo {
+
+    padding: 20px;
+    margin-bottom: 0;
+    grid-column: 3 / 5;
+    grid-row: 1;
+    text-align: center;
+
+}
+
+.frase {
+    padding: 10px 0 20px 10px;
+    padding: 20px;
+    margin-left: 10px;
+    text-align: center;
+    grid-row-start: 2;
+    grid-column: 2 / 6;
+}
+
+span {
+    color: var(--detalle);
+    font-weight: bold;
+}
+
+.frase a {
+    text-decoration: none;
+}
+
+.parrafo {}
+
+.boton-siguiente {
+    color: var(--texto);
+    background-color: var(--fondo);
+    border: solid 1px var(--texto);
+    padding: 16px;
+    margin: 16px;
+    width: 400px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+    transition-duration: 0.4s;
+    grid-column: 3/ 5;
+
+}
+
+.boton-siguiente:hover {
+    opacity: 0.8;
+    color: var(--detalle);
+}
+
+footer {
+    background-color: var(--detalle);
+    color: var(--texto);
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: var(--texto);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.copy-right {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--fondo);
+}
+
+
+@media (max-width: 768px) {
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        background-color: var(--fondo);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        padding: ;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    #barras {
+        font-size: 22px;
+        cursor: pointer;
+        display: block;
+        transition: 0.4s;
+        color: var(--texto);
+    }
+
+    nav ul li {
+        list-style: none;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: var(--texto);
+        font-size: 18px;
+        padding: 10px;
+        display: block;
+    }
+
+    nav ul li a:hover {
+        color: var(--detalle);
+        transition: 0.5s;
+        text-decoration: underline;
+    }
+
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer {}
+}
