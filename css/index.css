@@ -126,43 +126,79 @@
 
 .fourth-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 20px;
-  margin: 50px;
+  gap: 30px;
+    margin: 45px;
+    grid-template-columns: repeat(4, 1fr);
 }
 
-.black-tea,
-.green-tea,
-.oolong-tea,
-.white-tea {
-  background-color: var(--secondary-color);
-  color: var(--secondary-color);
-  width: 250px;
-  height: 250px;
-  border-radius: 10px;
-}
-
-.black-tea,
-.green-tea,
-.oolong-tea,
-.white-tea,
-h3,
-p {
+.flip-card {
+  background-color: transparent;
   color: var(--main-color);
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  justify-self: center;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
   text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+    align-content: center;
+    border-radius: 5px;
+}
+
+.flip-card-back {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  transform: rotateY(180deg);
+  }
+  
+  .flip-card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    padding: 15px;
+  }
+  
+  .flip-card-front p {
+    padding-top: 10px;
+  }
+  
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .fifth-container {
   height: 100vh;
-  width: 100vw;
-  display: grid;
+  width: 100%;
   color: var(--secondary-color);
   font-size: 44px;
   place-items: center;
   place-content: center;
-
+  margin: 0;
+    padding-top: 15px;
   background: linear-gradient(
+    
       135deg,
       hsla(177, 15%, 25%, 0.65),
       hsla(32, 55%, 94%, 0.65)
@@ -171,6 +207,7 @@ p {
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
 }
+
 
 .center-container {
   text-align: center;
@@ -328,6 +365,7 @@ input::placeholder {
 
   #navbar {
     width: 100%;
+  
   }
 
   .nav-links {
@@ -388,7 +426,7 @@ input::placeholder {
     grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
-    padding: 20;
+    padding: 20px;
   }
 
   .black-tea,
