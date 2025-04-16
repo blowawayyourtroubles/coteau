@@ -2,32 +2,6 @@
   padding: 20px;
 }
 
-.fa-solid {
-  color: var(--main-color);
-  padding: 10px;
-  cursor: pointer;
-  font-size: 28px;
-}
-
-.fa-solid:hover {
-  color: var(--detail);
-  transition: 0.5s;
-}
-
-.fa-x {
-  display: none;
-}
-
-.firs-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  margin: 20px;
-  align-items: center;
-  grid-template-columns: repeat(2, 1fr);
-}
-
 .welcome-text {
   font-size: 40px;
   padding: 20px;
@@ -207,186 +181,13 @@
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
 }
-
-
 .center-container {
   text-align: center;
 }
 
-/* footer */
-
-.footer-container {
-  padding: 20px;
-  text-align: center;
-  color: var(--detail);
-  background-color: var(--secondary-color);
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.logo-footer {
-  color: var(--detail);
-  font-size: 40px;
-  padding: 20px;
-  display: flex;
-}
-
-.logo-footer a {
-  color: var(--detail);
-  text-decoration: none;
-}
-
-.logo-footer a:hover {
-  color: var(--main-color);
-  transition: 0.5s;
-}
-.footer-links {
-  list-style: none;
-  display: flex;
-  padding: 20px 30px;
-  justify-content: center;
-}
-
-.footer-links li {
-  padding: 10px;
-}
-
-.footer-links-container a {
-  color: var(--detail-2);
-  text-decoration: none;
-}
-
-.footer-links-container a:hover {
-  color: var(--detail);
-  transition: 0.5s;
-  text-decoration: underline;
-}
-
-.subscribe-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  gap: 10px;
-  padding: 20px;
-  align-self: center;
-  text-align: justify;
-}
-
-.subscribe-container h3 {
-  color: var(--main-color);
-  margin: 0;
-}
-
-.subscribe-container p {
-  font-size: 20px;
-  padding: 20px;
-  color: var(--detail);
-  text-align: justify;
-}
-
-input {
-  padding: 10px 20px;
-  margin: 10px;
-  border-radius: 5px;
-  background-color: var(--secondary-color);
-  color: var(--detail-2);
-  border: 1px solid var(--detail);
-  align-items: center;
-  width: 400px;
-}
-input::placeholder {
-  color: var(--detail);
-}
-
-.subscribe-btn {
-  padding: 10px 20px;
-  margin: 10px;
-  border-radius: 5px;
-  background-color: var(--detail-2);
-  color: var(--secondary-color);
-  border: none;
-  align-items: center;
-  cursor: pointer;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
-.subscribe-btn:hover {
-  background-color: var(--detail);
-  transition: 0.9s;
-}
-
-.social-media {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.fa-x-twitter,
-.fa-instagram {
-  color: var(--main-color);
-  padding: 10px;
-  cursor: pointer;
-}
-
-.fa-x-twitter:hover,
-.fa-instagram:hover {
-  color: var(--detail);
-  transition: 0.5s;
-}
-
-.copy-right {
-  color: var(--detail-2);
-  padding: 20px;
-  font-size: 18px;
-  text-align: center;
-}
 
 @media screen and (max-width: 768px) {
-  .header-container {
-    font-size: 20px;
-  }
-  .header-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: var(--main-color);
-  }
-
-  .logo-main {
-    margin-bottom: 10px;
-  }
-
-  #navbar {
-    width: 100%;
   
-  }
-
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 0;
-    list-style: none;
-  }
-
-  .nav-links li {
-    width: 100%;
-  }
-
-  .nav-links a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: inherit;
-  }
-
   .main-container {
     grid-template-columns: 1fr;
   }
@@ -448,37 +249,4 @@ input::placeholder {
     height: auto;
   }
 
-  .footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  input {
-    width: 100%;
-  }
-  .subscribe-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 20px;
-    text-align: justify;
-  }
-
-  .subscribe-container h3 {
-    text-align: center;
-    color: var(--main-color);
-  }
-  .subscribe-container p {
-    font-size: 18px;
-    padding: 20px;
-    color: var(--detail);
-    text-align: justify;
-  }
-
-  .subscribe-container input {
-    width: 100%;
-  }
 }

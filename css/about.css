@@ -208,7 +208,7 @@ p {
 }
 
 .tea-ritual-title {
-    color: var(--secondary-color);
+    color: var(--main-color);
     border-bottom: 2px solid var(--secondary-color);
     padding: 10px;
     justify-content: center;
@@ -216,7 +216,48 @@ p {
     font-size: 40px;
 }
 
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
 
+.article-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    display: grid;
+    /* Optional: for aligning text inside */
+}
+
+.article-content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(55,
+            75,
+            74,
+            0.7);
+    color: var(--secondary-color);
+    width: 100vh;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.article-button {
+    font-size: 14px;
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.article-button:hover {
+    color: var(--detail);
+}
+
+.article-image {
+    width: 500px;
+
+}
 @media (max-width: 768px) {
     .tea-ritual-description {
         grid-template-columns: 1fr;

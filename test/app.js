@@ -27,7 +27,6 @@ barras.addEventListener('click', () => {
   navMenu.classList.toggle('active');
 })
 
-
 const frases =[
   "Night falls fast. Today is in the past",
 

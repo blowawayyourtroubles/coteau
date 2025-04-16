@@ -6,7 +6,7 @@
     <title>Menu | Cocteau's Tea</title>
     <link rel="stylesheet" href="/css/estilo.css" />
     <link rel="stylesheet" href="/css/menu.css" />
-    <link rel="shortcut icon" href="/assets/ico.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/cup-ico.png" type="image/x-icon">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -18,29 +18,35 @@
 
   <style></style>
   <body>
-    <header>
-      <div class="header-container">
-        <div class="logo-main">
-          <a href="/index.html">
-            <span class="logo">Cocteau's Tea</span>
-          </a>
-        </div>
-        <!-- <div class="menu-icon" id="menu-icon">
-          <i class="fa-solid fa-bars"></i>
-        </div> -->
-        <nav id="navbar">
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="locations.html">Locations</a></li>
-          </ul>
-          <!-- 
-          <i class="fa-solid fa-user"></i>
-          <i class="fa-solid fa-palette"></i> -->
-        </nav>
-      </div>
-    </header>
+     
+<header>
+
+  <div class="header-container">
+
+    <div class="logo-main">
+
+      <a href="/index.html">
+
+        <span class="logo">Cocteau's Tea</span>
+
+      </a>
+
+    </div>
+
+    <nav id="navbar">
+      <i class="fa-solid fa-bars" id="barras"></i>
+      <ul class="nav-links">
+     
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="locations.html">Locations</a></li>
+
+      </ul>
+
+  </div>
+
+</header>
     <main>
       <div class="menu-container">
         <h2 class="menu-title">Today's Specials</h2>
@@ -86,6 +92,71 @@
           </div>
         </section>
       </div>
+
+      <section class="brew-guide">
+        <h1>Tea Brewing Guide</h1>
+        <table class="brew-table">
+          <thead>
+            <tr>
+              <th>Tea Type</th>
+              <th>Water Temp (°F)</th>
+              <th>Water Temp (°C)</th>
+              <th>Brew Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Black</strong></td>
+              <td>205 - 212</td>
+              <td>96 - 100</td>
+              <td>3 - 5 minutes</td>
+            </tr>
+            <tr>
+              <td><strong>Green</strong></td>
+              <td>175 - 180</td>
+              <td>79 - 82</td>
+              <td>2 - 3 minutes</td>
+            </tr>
+            <tr>
+              <td><strong>Green-Black Blend</strong></td>
+              <td>180 - 212</td>
+              <td>82 - 100</td>
+              <td>3 - 4 minutes</td>
+            </tr>
+            <tr>
+              <td><strong>White</strong></td>
+              <td>175 - 180</td>
+              <td>79 - 82</td>
+              <td>3 - 4 minutes</td>
+            </tr>
+            <tr>
+              <td><strong>Herbal, Rooibos</strong></td>
+              <td>190 - 212</td>
+              <td>88 - 100</td>
+              <td>4 - 5 minutes</td>
+            </tr>
+            <tr>
+              <td><strong>Puerh</strong></td>
+              <td>195 - 200</td>
+              <td>90 - 95</td>
+              <td>4 - 5 minutes*</td>
+            </tr>
+            <tr>
+              <td><strong>Yellow</strong></td>
+              <td>175 - 180</td>
+              <td>79 - 82</td>
+              <td>2 - 3 minutes</td>
+            </tr>
+            <tr>
+              <td><strong>Oolong</strong></td>
+              <td>180 - 195</td>
+              <td>82 - 90</td>
+              <td>2 - 3 minutes*</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="note">* Often uses specialized teaware for a series of small, short brews</p>
+      </section>
     </main>
     <div class="hero">
       <div class="hero-content">
@@ -169,5 +240,6 @@
         <p class="copy-right">&copy; 2025 Cocteau's Tea. All Rights Reserved</p>
       </div>
     </footer>
+    <script src="/index.js"></script>
   </body>
 </html>

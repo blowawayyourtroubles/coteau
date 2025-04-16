@@ -301,3 +301,21 @@ i {
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
   }
+.display-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #210F04 5px solid;
+    min-height: 800px;
+
+}
+
+.box {
+    background-color: #38A3A5;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    font-size: 28px;
+    color: #F2E8CF;
+
+}

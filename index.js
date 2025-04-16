@@ -1,15 +1,17 @@
 
-toggle.addEventListener('click', function () {
-    this.classList.toggle("fa-bars");
+const barras   = document.getElementById('barras');
+const navMenu  = document.querySelector('.nav-links');   
+const body     = document.body;                         
 
-    if (body.classList.toggle("fa-bars")) {
-       
-    }
-});
-
-const barras = document.getElementById('barras');
-const navMenu = document.querySelector('.nav-menu');
 
 barras.addEventListener('click', () => {
+  
+  barras.classList.toggle('fa-bars');
+  barras.classList.toggle('fa-xmark');
+
+
   navMenu.classList.toggle('active');
-})
+
+
+  body.classList.toggle('no-scroll');
+});
