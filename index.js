@@ -1,6 +1,6 @@
 
 const barras   = document.getElementById('barras');
-const navMenu  = document.querySelector('.nav-links');   
+const navMenu  = document.querySelector('.navbar-list');   
 const body     = document.body;                         
 
 

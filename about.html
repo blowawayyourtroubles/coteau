@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Cocteau's Tea</title>
   <link rel="stylesheet" href="/css/estilo.css" />
-  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="/css/about.css">
+  <link rel="stylesheet" href="/css/hola.css">
   <link rel="shortcut icon" href="/assets/cup-ico.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -15,36 +16,33 @@
 </head>
 
  
-<header>
 
-  <div class="header-container">
-
-    <div class="logo-main">
-
-      <a href="/index.html">
-
-        <span class="logo">Cocteau's Tea</span>
-
-      </a>
-
-    </div>
-
-    <nav id="navbar">
-      <i class="fa-solid fa-bars" id="barras"></i>
-      <ul class="nav-links">
-     
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="locations.html">Locations</a></li>
-
-      </ul>
-
-  </div>
-
-</header>
 
 <body>
+  <header class="header-container">
+    <nav id="navbar">
+      <a href="index.html" class="header-link">
+        <h1 class="logo-header">Cocteau's Tea</h1>
+      </a>
+      <i class="fa-solid fa-bars" id="barras"></i>
+      <ul class="navbar-list">
+        <a href="index.html">
+          <li class="nav-item">Home</li>
+        </a>
+        <a href="menu.html">
+          <li class="nav-item">Menu</li>
+        </a>
+        <a href="about.html">
+          <li class="nav-item">About Us</li>
+        </a>
+        <a href="locations.html">
+          <li class="nav-item">Locations</li>
+        </a>
+      </ul>
+      
+    </nav>
+  </header>
+  
   <main class="main-container">
     <section class="main-section">
       <div class="main-div">
@@ -82,23 +80,36 @@
       </div>
     </section>
 
-    <section class="timeline">
-      <h2>Timeline of the Enigma</h2>
-      <div class="timeline-events">
-        <div class="event">
-          <span class="year">1963</span>
-          <p>Shop founded by Lucien Cocteau.</p>
-        </div>
-        <div class="event">
-          <span class="year">1987</span>
-          <p>Lucien's mysterious disappearance.</p>
-        </div>
-        <div class="event">
-          <span class="year">2001</span>
-          <p>M.C. arrives, bringing new blends and secrets.</p>
-        </div>
-      </div>
-    </section>
+<div class="time-line">
+  <div class="time-line-title">
+  <h2>Timeline of the Enigma</h2>
+  </div> 
+  <div class="container">
+  <div class="text-box">
+    <small><p>1963</p></small>
+    <p>Shop founded by Lucien Cocteau, inspired by the enigmatic artist Jean Cocteau. The tea house quickly became a cultural hub in Paris.</p>
+  </div>  
+  </div>
+  <div class="container">
+  <div class="text-box">
+    <small><p>1972</p></small>
+    <p>Lucien mysteriously disappears during a grand masquerade, leaving behind unanswered questions and a legacy of intrigue.</p>
+  </div>  
+  </div>
+  <div class="container">
+  <div class="text-box">
+    <small><p>2001</p></small>
+    <p>M.C. reopens the shop, preserving its haunting elegance while introducing new blends and modern rituals.</p>
+  </div>  
+  </div>
+  <div class="container">
+  <div class="text-box">
+    <small><p>2025</p></small>
+    <p>Cocteau's Tea continues to enchant visitors with its timeless charm, blending history, mystery, and exquisite tea experiences.</p>
+  </div>  
+  </div>
+</div>
+
 
     <section class="tea-ritual-section">
       <div class="tea-ritual-container">
@@ -127,75 +138,63 @@
               elegance.
             </p>
           </div>
-          <!-- <img src="/assets/cocteau-hill.jpg" alt=""> -->
+      
         </div>
       </div>
     </section>
 
-    <section id="our-locations">
-      <h2 class="locations-title">Our Locations:</h2>
-      <div class="locations-container">
-        <div class="location-item">
-          <p class="location-name"><strong>Paris</strong><br />40 rue du Faubourg National</p>
-        </div>
-        <div>
-
-        </div>
+    <section id="our-location">
+      <h2 class="location-title">Paris (40 rue du Faubourg National)</h2>
+      <div class="location-container">
+      <div class="location-item">
+        <p class="location-p">
+        Nestled in the heart of the Marais district, 
+        Cocteau's Tea resides at 40 rue du Faubourg National.
+        The shop is tucked away behind an unassuming façade, 
+        marked only by a brass plaque engraved with a single
+        teacup.Step through the heavy oak door, and you're
+        greeted by an ambiance that feels like stepping into
+        a dream—velvet drapes, flickering candelabras, and 
+        the faint aroma of bergamot and jasmine.
+          </p>   
+      
+            <p class="location-p">The location itself is steeped 
+              in mystery; locals whisper that the building once
+              housed secret salons frequented by surrealists and 
+              poets. Some say the walls hold echoes of whispered 
+              verses and clandestine rendezvous, making every visit
+              an experience that transcends time and space.
+          </p>
+      </div>
       </div>
     </section>
     <section>
       <div class="section-header">
-        <p class="section-subtitle">Explore the latest</p>
         <h2 class="section-title">Articles & Recipes</h2>
       </div>
-      <div class="article-grid">
-        <div class="article-card">
-          <a href="#" class="article-link">
-            <img
-              src="/assets/Saint.png"
-              alt="Cherry blossom tea"
-              class="article-image"
-            />
-            <div class="article-content">
-              <p class="article-category">Discover New Blends</p>
-              <h3 class="article-title">Tea Blend Spotlight: Cherry Blossom</h3>
-              <span class="article-button">Learn More</span>
+      <div class="articles-container">
+        <div class="article-card" id="item-1">
+            <img src="/assets/tea_burlap.jpeg" alt="Tea garden landscape" class="article-image">
             </div>
-          </a>
-        </div>
-  
-        <div class="article-card">
-          <a href="#" class="article-link">
-            <img
-              src="/assets/Paris.png"
-              alt="Chocolate torte"
-              class="article-image"
-            />
-            <div class="article-content">
-              <p class="article-category">Tea Recipes</p>
-              <h3 class="article-title">
-                Cherry Blossom Infused Chocolate Torte
-              </h3>
-              <span class="article-button">Get Recipe</span>
+
+            <div class="article-card" id="item-2">
+           
+                 <div class="article-card-content">
+                    <p class="article-category">Tea Recipes</p>
+                    <h3 class="article-title">Cherry Blossom Infused Chocolate Torte</h3>
+                    <a href=""> <span class="article-button-visual" aria-hidden="true">Get Recipe</span></a>
+                </div>
+         
             </div>
-          </a>
-        </div>
-  
-        <div class="article-card">
-          <a href="#" class="article-link">
-            <img
-              src="/assets/Tours.png"
-              alt="Teaware collection"
-              class="article-image"
-            />
-            <div class="article-content">
-              <p class="article-category">Teaware</p>
-              <h3 class="article-title">Fiore Sakura Teaware Collection</h3>
-              <span class="article-button">Learn More</span>
+
+         <div class="article-card" id="item-3">
+             <div class="article-card-content">
+                    <p class="article-category">Discover New Blends</p>
+                    <h3 class="article-title">Tea Blend Spotlight: Cherry Blossom</h3>
+                    <a href=""><span class="article-button-visual" aria-hidden="true">Learn More</span></a>
+                 </div>
             </div>
-          </a>
-        </div>
-      </div>
+        </div> 
     </section>
 </main>
 

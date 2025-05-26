@@ -19,80 +19,77 @@
   <style></style>
   <body>
      
-<header>
-
-  <div class="header-container">
-
-    <div class="logo-main">
-
-      <a href="/index.html">
-
-        <span class="logo">Cocteau's Tea</span>
-
-      </a>
-
-    </div>
-
-    <nav id="navbar">
-      <i class="fa-solid fa-bars" id="barras"></i>
-      <ul class="nav-links">
-     
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="locations.html">Locations</a></li>
-
-      </ul>
-
-  </div>
-
-</header>
-    <main>
-      <div class="menu-container">
-        <h2 class="menu-title">Today's Specials</h2>
-        <section class="menu-section">
+    <header class="header-container">
+      <nav id="navbar">
+        <a href="index.html" class="header-link">
+          <h1 class="logo-header">Cocteau's Tea</h1>
+        </a>
+        <i class="fa-solid fa-bars" id="barras"></i>
+        <ul class="navbar-list">
+          <a href="index.html">
+            <li class="nav-item">Home</li>
+          </a>
+          <a href="menu.html">
+            <li class="nav-item">Menu</li>
+          </a>
+          <a href="about.html">
+            <li class="nav-item">About Us</li>
+          </a>
+          <a href="locations.html">
+            <li class="nav-item">Locations</li>
+          </a>
+        </ul>
+        
+      </nav>
+    </header>
+    
+    <main class="menu">
+      <section>
+        <h1 class="menu-title">Cocteau Menu</h1>
+        <div class="menu-section">
           <div class="menu-item">
-            <h3>Jasmine Reverie</h3>
-            <p class="price">$10 / 100g</p>
+            <img src="/assets/menu/white-tea.jpg" alt="" class="menu-item-image" />
+            <h3 class="menu-item-title">Mint Mirage</h3>
+            <p class="menu-item-description">$09 / 100G</p>
+            <a href="/mycart.html"><button class="menu-item-button" onclick="">Buy Now</button></a>
           </div>
           <div class="menu-item">
-            <h3>Golden Darjeeling</h3>
-            <p class="price">$14 / 100g</p>
-          </div>
-        </section>
-
-        <section class="menu-section">
-          <h2>Seasonal Teas - January</h2>
-          <div class="menu-item">
-            <img class="herbal-bliss" src="/assets/black-tea.jpeg" alt="" />
-            <h3>Winter Rose</h3>
-            <p class="price">$11 / 100g</p>
+            <img src="/assets/menu/green-tea.jpg" alt="" class="menu-item-image" />
+            <h3 class="menu-item-title">Jasmine Reveire</h3>
+            <p class="menu-item-description">$10 / 100G</p>
+            <button class="menu-item-button" onclick="">Buy Now</button>
           </div>
           <div class="menu-item">
-            <h3>Smoked Lapsang</h3>
-            <p class="price">$18 / 100g</p>
-          </div>
-        </section>
-
-        <section class="menu-section">
-          <h2>Herbal Infusions</h2>
-          <div class="menu-item">
-            <img class="herbal-bliss" src="/assets/herbal_bliss.jpeg" alt="" />
-            <h3>Herbal Bliss</h3>
-            <p class="price">$12 / 100g</p>
+            <img src="/assets/menu/yellow-tea.jpg" alt="" class="menu-item-image" />
+            <h3 class="menu-item-title">Golden Darjeeling</h3>
+            <p class="menu-item-description">$12 / 100g</p>
+            <button class="menu-item-button" onclick="">Buy Now</button>
           </div>
           <div class="menu-item">
-            <img
-              class="herbal-bliss"
-              src="/assets/Smoked_Lapsangh.jpeg"
-              alt=""
-            />
-            <h3>Mint Mirage</h3>
-            <p class="price">$9 / 100g</p>
+            <img src="/assets/menu/tea-white.png" alt="" class="menu-item-image" />
+            <h3 class="menu-item-title">Winter Rose</h3>
+            <p class="menu-item-description">$11 / 100g</p>
+            <button class="menu-item-button" onclick="">Buy Now</button>
           </div>
-        </section>
-      </div>
-
+          <div class="menu-item">
+            <img src="/assets/menu/herbal_bliss.jpeg" alt="" class="menu-item-image" />
+            <h3 class="menu-item-title">Smoked Lapsang</h3>
+            <p class="menu-item-description">$18 / 100g</p>
+            <button class="menu-item-button" onclick="">Buy Now</button>
+          </div>
+          <div class="menu-item">
+            <img src="/assets/menu/Smoked_Lapsangh.jpeg" alt="" class="menu-item-image" />
+            <h3 class="menu-item-title">Herbal Bliss</h3>
+            <p class="menu-item-description">$14 / 100g</p>
+            <button class="menu-item-button" onclick="">Buy Now</button>
+          </div>
+    
+        </div>
+        <div>
+          <!-- <img  id="carrusell"   src="/assets/simple-tea.jpeg" alt=""> -->
+        </div>
+      </section>
+    
       <section class="brew-guide">
         <h1>Tea Brewing Guide</h1>
         <table class="brew-table">
@@ -158,48 +155,61 @@
         <p class="note">* Often uses specialized teaware for a series of small, short brews</p>
       </section>
     </main>
-    <div class="hero">
-      <div class="hero-content">
-        <h1>Tea Origins Around the World</h1>
-        <p class="subtitle">
-          Discover the rich cultural heritage and unique flavors of teas from
-          different regions across the globe
-        </p>
-
-        <div class="grid">
-          <div class="card" tabindex="0">
-            <h2>China</h2>
-            <p>
-              The birthplace of tea, China offers diverse varieties like
-              delicate green teas, complex oolongs, and aged pu-erh. Regions
-              like Fujian and Yunnan produce teas with centuries of tradition.
-            </p>
-            <a href="#" class="learn-more">Explore Chinese teas →</a>
-          </div>
-
-          <div class="card" tabindex="0">
-            <h2>India</h2>
-            <p>
-              World-renowned for robust Assam and floral Darjeeling teas.
-              India's varied climates produce distinctive flavors, from malty
-              breakfast teas to delicate high-grown varieties.
-            </p>
-            <a href="#" class="learn-more">Explore Indian teas →</a>
-          </div>
-
-          <div class="card" tabindex="0">
-            <h2>Japan</h2>
-            <p>
-              Master of green tea, Japan specializes in shaded teas like matcha
-              and gyokuro, with precise steaming techniques that create vibrant,
-              umami-rich flavors.
-            </p>
-            <a href="#" class="learn-more">Explore Japanese teas →</a>
+    <section>
+     <div class="tea-hero">
+        <div class="tea-hero-content">
+          <h1 class="tea-origins-title">Tea Origins Around the World</h1>
+          <p class="tea-subtitle">
+            Discover the rich cultural heritage and unique flavors of teas from
+            different regions across the globe
+          </p>
+    
+          <div class="tea-grid">
+            <div class="tea-card" tabindex="0">
+              <h2>China</h2>
+              <p>
+                The birthplace of tea, China offers diverse varieties like
+                delicate green teas, complex oolongs, and aged pu-erh. Regions
+                like Fujian an d Yunnan produce teas with centuries of tradition.
+              </p>
+              <a href="#" class="tea-learn-more">Explore Chinese teas →</a>
+            </div>
+    
+            <div class="tea-card" tabindex="0">
+              <h2>India</h2>
+              <p>
+                World-renowned for robust Assam and floral Darjeeling teas.
+                India's varied climates produce distinctive flavors, from malty
+                breakfast teas to delicate high-grown varieties.
+              </p>
+              <a href="#" class="tea-learn-more">Explore Indian teas →</a>
+            </div>
+    
+            <div class="tea-card" tabindex="0">
+              <h2>Japan</h2>
+              <p>
+                Master of green tea, Japan specializes in shaded teas like matcha
+                and gyokuro, with precise steaming techniques that create vibrant,
+                umami-rich flavors.
+              </p>
+              <a href="#" class="tea-learn-more">Explore Japanese teas →</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
+    </section>
+    <section>
+      <div class="tea-gallery-container">
+  <div class="tea-gallery tea-gallery-img-1"><img src="/assets/species-tea.png" alt=""></div>
+  <div class="tea-gallery tea-gallery-img-3"><img src="/assets/calm-tea.jpg" alt=""></div>
+  <div class="tea-gallery tea-gallery-img-2"><img src="/assets/tea-cup-img.png" alt=""></div>
+  <div class="tea-gallery-text">
+    <div class="tea-photo">Transmission</div>
+    <div class="tea-photo">Suspension</div>
+    <div class="tea-photo">Solution</div>
+  </div>
+</div>
+    </section>
     <footer>
       <div class="footer-container">
         <div class="logo-footer">
