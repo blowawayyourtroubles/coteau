@@ -18,28 +18,26 @@
 <body>
   
   <header class="header-container">
-    <nav id="navbar">
-      <a href="index.html" class="header-link">
-        <h1 class="logo-header">Cocteau's Tea</h1>
-      </a>
-      <i class="fa-solid fa-bars" id="barras"></i>
-      <ul class="navbar-list">
-        <a href="index.html">
-          <li class="nav-item">Home</li>
-        </a>
-        <a href="menu.html">
-          <li class="nav-item">Menu</li>
-        </a>
-        <a href="about.html">
-          <li class="nav-item">About Us</li>
-        </a>
-        <a href="locations.html">
-          <li class="nav-item">Locations</li>
-        </a>
-      </ul>
-      
-    </nav>
-  </header>
+  <nav id="navbar">
+    <a href="index.html" class="header-link">
+      <h1 class="logo-header">Cocteau's Tea</h1>
+    </a>
+    <button id="barras"
+            class="hamburger-btn"
+            aria-label="Open menu"
+            aria-controls="navbar-list"
+            aria-expanded="false"
+            type="button">
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+    <ul class="navbar-list" id="navbar-list">
+      <li class="nav-item"><a href="index.html">Home</a></li>
+      <li class="nav-item"><a href="menu.html">Menu</a></li>
+      <li class="nav-item"><a href="about.html">About Us</a></li>
+      <li class="nav-item"><a href="locations.html">Locations</a></li>
+    </ul>
+  </nav>
+</header>
 
   <main class="main-container">
 
