@@ -50,7 +50,7 @@
         align-items: center;
         justify-content: center;
         background: linear-gradient(365deg, #374b4ad1, #c4a07cad),
-            url(/assets/cocteau-hill.jpg) no-repeat center center / cover;
+            url(assets/cocteau-hill.jpg) no-repeat center center / cover;
     }
 
     .tea-ritual-title {
