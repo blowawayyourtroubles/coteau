@@ -73,7 +73,7 @@ small {
     width: 100%;
     color: var(--secondary-color);
     background: linear-gradient(135deg, #374b4acc, #f8f0e7a6),
-        url(assets/cocteau-hill.jpg) no-repeat center center / cover;
+        url(/assets/cocteau-hill.jpg) no-repeat center center / cover;
 }
 
 .tea-ritual-title {
