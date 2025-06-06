@@ -48,6 +48,8 @@ i {
 }
 #barras {
   display: none;
+  background: none;
+    border: none;
 }
 .header-container {
   background: var(--detail-4);
@@ -251,13 +253,13 @@ input::placeholder {
     .navbar-list {
       display: none;
     flex-direction: column;
-    position: fixed;
+      position: fixed;
       top: 80px;
       right: 0;
-      gap: 40px;
         width: 100%;
+        gap: 40px;
       height: 100vh;
-    padding: 75px 35px;
+      padding: 75px 25px;
       background: var(--main-color);
       transition: all 0.3s ease-in-out;
   }
